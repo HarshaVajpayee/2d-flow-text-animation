@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+  font-family: "Archivo Black", sans-serif;
+  background: #ff0080;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.words {
+  color: white;
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, -60%)
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(50%, 60%);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 6s;
+}
+.words span:nth-child(8) {
+  animation-delay: 7s;
+}
+.words span:nth-child(9) {
+  animation-delay: 8s;
+}
+.words span:nth-child(10) {
+  animation-delay: 9s;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="words word-1">
+      <span>I</span>
+    </div>
+
+    <div class="words word-2">
+      <span>A</span>
+      <span>M</span>
+    </div>
+
+    <div class="words word-3">
+      <span>S</span>
+      <span>U</span>
+      <span>C</span>
+      <span>C</span>
+      <span>E</span>
+      <span>S</span>
+      <span>S</span>
+      <span>F</span>
+      <span>U</span>
+      <span>L</span>
+    </div>
+  </body>
+</html>
